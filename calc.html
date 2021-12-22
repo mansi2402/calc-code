@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Number1:  <input type="text" id="n1"> </p>
+    <p>Number2:  <input type="text" id="n2"> </p>
+    <p> operations:
+    <button onclick="add()">Add</button>    
+    <button onclick="sub()">Sub</button>    
+    <button onclick="mult()">Mult</button>    
+    <button onclick="div()">Div</button>    
+    <button onclick="mod()">Mod</button>    
+    </p>
+    
+    <p id="res"> </p>
+  <script type="text/javascript">
+      var n1=document.getElementById("n1");
+      var n2=document.getElementById("n2");
+      var res=document.getElementById("res");
+      function add() {
+          res.innerHTML =Number(n1.value)+ Number(n2.value);
+      }
+      function sub() {
+          res.innerHTML =Number(n1.value)- Number(n2.value);
+      }
+      function mult() {
+          res.innerHTML =Number(n1.value)* Number(n2.value);
+      }
+      function div() {
+          res.innerHTML =Number(n1.value)/ Number(n2.value);
+      }
+      function mod() {
+          res.innerHTML =Number(n1.value)% Number(n2.value);
+      }
+  </script>
+</body>
+</html>
